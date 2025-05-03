@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>لعبة الديناصور</title>
+<style>
+  body {
+    background: #f7f7f7;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+  }
+  h1 {
+    color: #333;
+  }
+  .dino-game {
+    margin: 40px auto;
+    width: 600px;
+    height: 150px;
+    background: #fff;
+    border: 2px solid #ccc;
+    position: relative;
+    overflow: hidden;
+  }
+  .dino {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 44px;
+    height: 47px;
+    background: url('https://i.imgur.com/7XQXQ0S.png') no-repeat center;
+    background-size: contain;
+  }
+  .obstacle {
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+    width: 25px;
+    height: 50px;
+    background: #555;
+    animation: moveObstacle 2s linear infinite;
+  }
+  @keyframes moveObstacle {
+    0% { right: -50px; }
+    100% { right: 650px; }
+  }
+</style>
+</head>
+<body>
+<h1>لعبة الديناصور</h1>
+<p>اضغط على مفتاح المسافة للقفز (يمكنك تطوير اللعبة لاحقًا)</p>
+<div class="dino-game">
+  <div class="dino"></div>
+  <div class="obstacle"></div>
+</div>
+</body>
+</html>
