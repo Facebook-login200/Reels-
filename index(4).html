@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>موقع كورسات</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 0; padding: 20px; }
+  h1 { text-align: center; color: #333; }
+  .courses { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+  .course {
+    background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 250px; padding: 20px; cursor: pointer; transition: transform 0.2s;
+  }
+  .course:hover { transform: scale(1.05); }
+  .course h2 { margin-top: 0; color: #0073e6; }
+</style>
+</head>
+<body>
+<h1>الكورسات المتاحة</h1>
+<div class="courses">
+  <div class="course" onclick="goToLogin()">كورس تطوير الويب</div>
+  <div class="course" onclick="goToLogin()">كورس البرمجة بلغة بايثون</div>
+  <div class="course" onclick="goToLogin()">كورس التصميم الجرافيكي</div>
+  <div class="course" onclick="goToLogin()">كورس التسويق الرقمي</div>
+</div>
+
+<script>
+  function goToLogin() {
+    alert("You must signin first.");
+    window.location.href = "login.html";
+  }
+</script>
+</body>
+</html>
